@@ -1,0 +1,89 @@
+{
+  "16": [
+    {
+      "URL": "https://anton-public-bucket-boost.s3.eu-central-1.amazonaws.com/randfile_16GB_0.car",
+      "CommP": "baga6ea4seaqomjbaafkaqm4uxk2qqhju75nl7sxbvzcmkyhyls6pxkuk6podsdi",
+      "PieceSize": 17179869184,
+      "CarSize": 16001420818,
+      "PayloadCID": "bafykbzacece6ksck3cxvl7as5wqcmuqkjtrmz3a7lppdbltv7bl6ugbp76f5q"
+    },
+    {
+      "URL": "https://anton-public-bucket-boost.s3.eu-central-1.amazonaws.com/randfile_16GB_1.car",
+      "CommP": "baga6ea4seaqpm5l2wbjq3pi6jvqslqexhbmu7xrrhbnshdiauoi24be6wiedmpi",
+      "PieceSize": 17179869184,
+      "CarSize": 16001420818,
+      "PayloadCID": "bafykbzacedxselfw4xlxg3msvdm5qz3rc3zmvjori7o4rpppf3wxqrosgnm2k"
+    }
+  ],
+  "2": [
+    {
+      "URL": "https://anton-public-bucket-boost.s3.eu-central-1.amazonaws.com/randfile_2GB_0.car",
+      "CommP": "baga6ea4seaqh5prrl6ykov4t64k6m5giijsc44dcxtdnzsp4izjakqhs7twauiq",
+      "PieceSize": 2147483648,
+      "CarSize": 2000177948,
+      "PayloadCID": "bafyaa6qsgafcmalqudsaeidrunclaep6mdbipm2gjfvuosjfd6cbqd6th7bshy5hi5npxe727yjaagelucbyabasgafcmalqudsaeieapsxspo2i36no36n7yitswsxdazvziwvgj4vbp2scuxasrc6n4ejaage3r7m3saykcqeaegeavdllsbzaqcaibaaeecakrvvzam"
+    },
+    {
+      "URL": "https://anton-public-bucket-boost.s3.eu-central-1.amazonaws.com/randfile_2GB_1.car",
+      "CommP": "baga6ea4seaqaprayexhzm7zucdwiphycnt3gqbzxhb36afh54othjdrl7x2iioa",
+      "PieceSize": 2147483648,
+      "CarSize": 2000177948,
+      "PayloadCID": "bafyaa6qsgafcmalqudsaeien3nx6fkbwsh5tdk6qsqmwaqyf4qb6zufiqwygz6j5j375v5qknejaagelucbyabasgafcmalqudsaeig45oohptp2y3q24zcazfg77felm6yeimdmqc6scpeeo4n2dunybqjaage3r7m3saykcqeaegeavdllsbzaqcaibaaeecakrvvzam"
+    },
+    {
+      "URL": "https://anton-public-bucket-boost.s3.eu-central-1.amazonaws.com/randfile_2GB_2.car",
+      "CommP": "baga6ea4seaqdo6tycy4ejqhwow7kcmlpnf6ufzmaav2lhucccfjd7l7554m6oki",
+      "PieceSize": 2147483648,
+      "CarSize": 2000177948,
+      "PayloadCID": "bafyaa6qsgafcmalqudsaeielvr6uqgxzsjxak7z6rl4jkvhzlfzwvxan6ooxzm6jgaqqkxz44mjaagelucbyabasgafcmalqudsaeih46a5hun5pczxlvcibdtdq7pwfrtb2blyxjgq4ekmylcrxi2hbgajaage3r7m3saykcqeaegeavdllsbzaqcaibaaeecakrvvzam"
+    }
+  ],
+  "32": [
+    {
+      "URL": "https://anton-public-bucket-boost.s3.eu-central-1.amazonaws.com/randfile_32GB_0.car",
+      "CommP": "baga6ea4seaqbsxa74xdvrdlifcejw7tcikutlf6vftiao7y3dwjdcppdtqmbwia",
+      "PieceSize": 34359738368,
+      "CarSize": 32002841526,
+      "PayloadCID": "bafykbzacebkoilfp5puziezcyikw2sauyihkgn6b6ub7yshkmqmugdg6nssos"
+    },
+    {
+      "URL": "https://anton-public-bucket-boost.s3.eu-central-1.amazonaws.com/randfile_32GB_1.car",
+      "CommP": "baga6ea4seaqlp4cpulnm44ap5gv26vwqxwiq7ukmlgoqbsnped23fwmulkh4wkq",
+      "PieceSize": 34359738368,
+      "CarSize": 32002841526,
+      "PayloadCID": "bafykbzaced5kybq7qhghpfaid6t3va5dgzszhck27d4kayggekiojqttx7nda"
+    }
+  ],
+  "4": [
+    {
+      "URL": "https://anton-public-bucket-boost.s3.eu-central-1.amazonaws.com/randfile_4GB_0.car",
+      "CommP": "baga6ea4seaqapj7crd2xf6sqg36dn5ttx4s3ixn3igilhwy4wwd2nbceorfdsni",
+      "PieceSize": 4294967296,
+      "CarSize": 4000355338,
+      "PayloadCID": "bafykbzacedqqeauvw7o4i4nvvs3umho3egg6jn7eymt3liucqnpd6pnb66zxm"
+    },
+    {
+      "URL": "https://anton-public-bucket-boost.s3.eu-central-1.amazonaws.com/randfile_4GB_1.car",
+      "CommP": "baga6ea4seaqgdb3nt7eqzzclujypbay5ymqyqhrltv73r2euahdjdgczczv4una",
+      "PieceSize": 4294967296,
+      "CarSize": 4000355338,
+      "PayloadCID": "bafykbzacecadlstz6w6ktt435ifybxvvluaro7ahbyc3fdcuprtlf63cabffg"
+    },
+    {
+      "URL": "https://anton-public-bucket-boost.s3.eu-central-1.amazonaws.com/randfile_4GB_2.car",
+      "CommP": "baga6ea4seaqgxz62anvgodpdmncybrdnxgtj5qotxrzivakw67gjeac4yq2dkhy",
+      "PieceSize": 4294967296,
+      "CarSize": 4000355338,
+      "PayloadCID": "bafykbzacedlfc7mrkkqrh7ntnaevbytprz4svqes54pzuc5jvzn3gs2hix4da"
+    }
+  ],
+  "8": [
+    {
+      "URL": "https://anton-public-bucket-boost.s3.eu-central-1.amazonaws.com/randfile_8GB_0.car",
+      "CommP": "baga6ea4seaqctiuwpnrmhx5lg6k4n253dqpkcscanhn6aegjiaeffjbarg5jsfy",
+      "PieceSize": 8589934592,
+      "CarSize": 8000710565,
+      "PayloadCID": "bafykbzaceaimdnl3ka73lqmmno2hyztfkzhvishprnr2pr245y67qd6bx53uq"
+    }
+  ]
+}
