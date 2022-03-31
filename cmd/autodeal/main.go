@@ -1,7 +1,6 @@
 package main
 
 import (
-	"bytes"
 	"encoding/json"
 	"flag"
 	"fmt"
@@ -60,27 +59,18 @@ func main() {
 
 	d := args[piecesize][index]
 
-	cmd := exec.Command("boost", "deal",
+	out, err := exec.Command("boost", "deal",
 		"--verified=false",
+		"--quiet",
 		fmt.Sprintf("--provider=%s", maddr),
 		fmt.Sprintf("--http-url=%s", d.URL),
 		fmt.Sprintf("--commp=%s", d.CommP),
 		fmt.Sprintf("--car-size=%d", d.CarSize),
 		fmt.Sprintf("--piece-size=%d", d.PieceSize),
 		fmt.Sprintf("--payload-cid=%s", d.PayloadCID),
-	)
-
-	var stdout, stderr bytes.Buffer
-
-	cmd.Stdout = &stdout
-	cmd.Stderr = &stderr
-
-	err := cmd.Run()
-
-	fmt.Printf("stdout:\n%s\n", stdout.String())
-	fmt.Printf("stderr:\n%s\n", stderr.String())
-
+	).CombinedOutput()
 	if err != nil {
 		log.Fatal(err)
 	}
+	fmt.Println(string(out))
 }
