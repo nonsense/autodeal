@@ -61,7 +61,6 @@ func main() {
 
 	out, err := exec.Command("boost", "deal",
 		"--verified=false",
-		"--quiet",
 		fmt.Sprintf("--provider=%s", maddr),
 		fmt.Sprintf("--http-url=%s", d.URL),
 		fmt.Sprintf("--commp=%s", d.CommP),
