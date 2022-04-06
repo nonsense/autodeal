@@ -17,12 +17,14 @@ var (
 	inputdataURL string
 	piecesize    int
 	index        int
+	verified     bool
 )
 
 func init() {
 	flag.StringVar(&maddr, "maddr", "f0127896", "miner address on-chain")
 	flag.IntVar(&piecesize, "piecesize", 2, "piece size in GB")
 	flag.IntVar(&index, "index", 0, "file index")
+	flag.BoolVar(&verified, "verified", false, "")
 	flag.StringVar(&inputdataURL, "inputdata-url", "https://anton-public-bucket-boost.s3.eu-central-1.amazonaws.com/spx-notes.json", "input data (fixtures)")
 }
 
@@ -60,7 +62,7 @@ func main() {
 	d := args[piecesize][index]
 
 	out, err := exec.Command("boost", "deal",
-		"--verified=false",
+		fmt.Sprintf("--verified=%t", verified),
 		fmt.Sprintf("--provider=%s", maddr),
 		fmt.Sprintf("--http-url=%s", d.URL),
 		fmt.Sprintf("--commp=%s", d.CommP),
@@ -69,6 +71,7 @@ func main() {
 		fmt.Sprintf("--payload-cid=%s", d.PayloadCID),
 	).CombinedOutput()
 	if err != nil {
+		fmt.Println(string(out))
 		log.Fatal(err)
 	}
 	fmt.Println(string(out))
