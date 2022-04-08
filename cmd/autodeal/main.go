@@ -13,6 +13,7 @@ import (
 var (
 	args = map[int][]DealArgs{}
 
+	wallet       string
 	maddr        string
 	inputdataURL string
 	piecesize    int
@@ -21,6 +22,7 @@ var (
 )
 
 func init() {
+	flag.StringVar(&wallet, "wallet", "", "wallet to be used for the deal")
 	flag.StringVar(&maddr, "maddr", "f0127896", "miner address on-chain")
 	flag.IntVar(&piecesize, "piecesize", 2, "piece size in GB")
 	flag.IntVar(&index, "index", 0, "file index")
@@ -61,7 +63,8 @@ func main() {
 
 	d := args[piecesize][index]
 
-	out, err := exec.Command("boost", "deal",
+	args := []string{
+		"deal",
 		fmt.Sprintf("--verified=%t", verified),
 		fmt.Sprintf("--provider=%s", maddr),
 		fmt.Sprintf("--http-url=%s", d.URL),
@@ -69,7 +72,15 @@ func main() {
 		fmt.Sprintf("--car-size=%d", d.CarSize),
 		fmt.Sprintf("--piece-size=%d", d.PieceSize),
 		fmt.Sprintf("--payload-cid=%s", d.PayloadCID),
-	).CombinedOutput()
+	}
+
+	if wallet != "" {
+		args = append(args,
+			fmt.Sprintf("--wallet=%s", wallet),
+		)
+	}
+
+	out, err := exec.Command("boost", args...).CombinedOutput()
 	if err != nil {
 		fmt.Println(string(out))
 		log.Fatal(err)
