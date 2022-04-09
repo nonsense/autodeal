@@ -19,6 +19,7 @@ var (
 	piecesize    int
 	index        int
 	verified     bool
+	price        int64
 )
 
 func init() {
@@ -28,6 +29,7 @@ func init() {
 	flag.IntVar(&index, "index", 0, "file index")
 	flag.BoolVar(&verified, "verified", false, "")
 	flag.StringVar(&inputdataURL, "inputdata-url", "https://anton-public-bucket-boost.s3.eu-central-1.amazonaws.com/spx-notes.json", "input data (fixtures)")
+	flag.Int64Var(&price, "price-per-epoch", 1, "price-per-epoch for deal")
 }
 
 type DealArgs struct {
@@ -72,6 +74,7 @@ func main() {
 		fmt.Sprintf("--car-size=%d", d.CarSize),
 		fmt.Sprintf("--piece-size=%d", d.PieceSize),
 		fmt.Sprintf("--payload-cid=%s", d.PayloadCID),
+		fmt.Sprintf("--storage-price-per-epoch=%d", price),
 	}
 
 	if wallet != "" {
